@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+    <div class="intro-container">
+        <header class="header-logo">
+            <img class="header-logo-image" src="images/logo.png" alt="" width="30" height="29">
+            <div class="header-logo-text">
+                <p>aviasales</p>
+            </div>
+        </header>
+
+        <div class="intro-interface">
+            <div class="title-body">
+                <div class="title-text-body">
+                    <h1 class="title-text">Поиск дешевых авиабилетов</h1>
+                    <h2 class="title-text-subtitle">Лучший способ купить авиабилеты дешево</h2>
+                </div>
+            </div>
+
+            <div class="search-params">
+                <form>
+                    <label for="city-select"></label>
+                    <select name="city-select" id="city-select" class="param-rect city-select">
+                        <option value="moscow">Москва</option>
+                        <option value="petersburg">Санкт-Петербург</option>
+                        <option value="samara">Самара</option>
+                        <option value="perm">Пермь</option>
+                        <option value="novosibirsk">Новосибирск</option>
+                    </select>
+                </form>
+                <form>
+                    <label for="arrival_city"></label>
+                    <input class="param-rect arrival_city" type="text" id="arrival_city" placeholder="Город прибытия" value="">
+                </form>
+                <form>
+                    <label class="date-label">
+
+                        <input class="param-rect departure-date" type="date" data-date="" data-date-format="DD MMMM YYYY"> <!-- нужен JS -->
+                    </label>
+                </form>
+                <form>
+                    <label class="date-label">
+
+                        <input class="param-rect return-date" type="date" id="custom-date"> <!-- нужен JS -->
+                    </label>
+                </form>
+                <form>
+                    <label>
+                        <select class="param-rect passenger-services" name="city-select"> <!-- нужен JS -->
+                            <option value="one">1 пассажир</option>
+                            <option value="two">2 пассажира</option>
+                            <option value="three">3 пассажира</option>
+                            <option value="four">4 пассажира</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+            <div class="button-body">
+                <a href="#" class="button-rect">
+                    <p class="button-text">Найти билеты</p>
+                    <img class="button-image" src="images/search.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <main class="main-catalog">
+            <div class="catalog-head">
+                <img class="compass-image" src="images/compass.png" alt="compass">
+            </div>
+            <div class="catalog-text-body">
+                <h2 class="catalog-text">Популярные направления перелетов<br>из города
+                    <span class="changed-city-text">Москва</span> <!-- нужен JS -->
+                    <button class="edit-image-button">
+                        <img class="edit-image" src="images/edit.png" alt="edit">
+                    </button>
+                </h2>
+            </div>
+            <div class="category-body">
+                <button class="category-button">
+                    <img class="category-image-active" src="images/categories/c-icon-active-1.png" alt="Куда угодно">
+                    <span class="category-text-active">КУДА<br>УГОДНО</span>
+                    <img class="text-with-underline" src="" alt="">
+                </button>
+                <button class="category-button">
+                    <img class="category-image-inactive" src="images/categories/c-icon-2.png" alt="Солнце и море">
+                    <span class="category-text-inactive">СОЛНЦЕ<br>И МОРЕ</span>
+                </button>
+                <button class="category-button">
+                    <img class="category-image-inactive" src="images/categories/c-icon-3.png" alt="Шоппинг, город">
+                    <span class="category-text-inactive">ШОППИНГ,<br>ГОРОД</span>
+                </button>
+                <button class="category-button">
+                    <img class="category-image-inactive" src="images/categories/c-icon-4.png" alt="Культура и история">
+                    <span class="category-text-inactive">КУЛЬТУРА<br>И ИСТОРИЯ</span>
+                </button>
+                <button class="category-button">
+                    <img class="category-image-inactive" src="images/categories/c-icon-5.png" alt="Ночная жизнь">
+                    <span class="category-text-inactive">НОЧНАЯ ЖИЗНЬ</span>
+                </button>
+                <button class="category-button">
+                    <img class="category-image-inactive" src="images/categories/c-icon-6.png" alt="Отдых с детьми">
+                    <span class="category-text-inactive">ОТДЫХ<br>С ДЕТЬМИ</span>
+                </button>
+            </div>
+            <div class="city-catalog-body">
+                <a class="city-box" href="#">
+                    <img class="city-box-image" src="images/city/City_1.png" alt="Город-№1">
+                    <div class="lower-city-box">
+                        <img class="country-image country-image-city-box" src="images/country/russia.png" alt="Россия">
+                        <div class="route-info">
+                            <div class="route-info-left">
+                                <span class="route-name">Краснодар</span>
+                                <span class="route-country">РОССИЯ</span>
+                            </div>
+                            <div class="route-info-right">
+                                <span class="route-price">Найти от 1 212 ₽</span>
+                                <span class="route-date">18 марта</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="city-box" href="#">
+                    <img class="city-box-image" src="images/city/City_2.png" alt="Город-№2">
+                    <div class="lower-city-box">
+                        <img class="country-image country-image-city-box" src="images/country/russia.png" alt="Россия">
+                        <div class="route-info">
+                            <div class="route-info-left">
+                                <span class="route-name">Сочи (Адлер)</span>
+                                <span class="route-country">РОССИЯ</span>
+                            </div>
+                            <div class="route-info-right">
+                                <span class="route-price">Найти от 1 334 ₽</span>
+                                <span class="route-date">27 марта</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="city-box" href="#">
+                    <img class="city-box-image" src="images/city/City_3.png" alt="Город-№3">
+                    <div class="lower-city-box">
+                        <img class="country-image country-image-city-box" src="images/country/russia.png" alt="Россия">
+                        <div class="route-info">
+                            <div class="route-info-left">
+                                <span class="route-name">Санкт-Петербург</span>
+                                <span class="route-country">РОССИЯ</span>
+                            </div>
+                            <div class="route-info-right">
+                                <span class="route-price">Найти от 1 508 ₽</span>
+                                <span class="route-date">19 февраля</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="city-box" href="#">
+                    <img class="city-box-image" src="images/city/City_4.png" alt="Город-№4">
+                    <div class="lower-city-box">
+                        <img class="country-image country-image-city-box" src="images/country/russia.png" alt="Россия">
+                        <div class="route-info">
+                            <div class="route-info-left">
+                                <span class="route-name">Минеральные Воды</span>
+                                <span class="route-country">РОССИЯ</span>
+                            </div>
+                            <div class="route-info-right">
+                                <span class="route-price">Найти от 2 074 ₽</span>
+                                <span class="route-date">13 марта</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="city-box" href="#">
+                    <img class="city-box-image" src="images/city/City_5.png" alt="Город-№5">
+                    <div class="lower-city-box">
+                        <img class="country-image country-image-city-box" src="images/country/russia.png" alt="Россия">
+                        <div class="route-info">
+                            <div class="route-info-left">
+                                <span class="route-name">Симферополь (Крым)</span>
+                                <span class="route-country">РОССИЯ</span>
+                            </div>
+                            <div class="route-info-right">
+                                <span class="route-price">Найти от 2 407 ₽</span>
+                                <span class="route-date">13 марта</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="city-box" href="#">
+                    <img class="city-box-image" src="images/city/City_6.png" alt="Город-№6">
+                    <div class="lower-city-box">
+                        <img class="country-image country-image-city-box" src="images/country/spain.png" alt="Spain">
+                        <div class="route-info">
+                            <div class="route-info-left">
+                                <span class="route-name">Барселона</span>
+                                <span class="route-country">ИСПАНИЯ</span>
+                            </div>
+                            <div class="route-info-right">
+                                <span class="route-price">Найти от 4 247 ₽</span>
+                                <span class="route-date">24 марта</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="best-prices-head">
+                <img class="chart-image" src="images/chart.png" alt="chart">
+                <span class="best-prices-head-text">Лучшие цены на авиабилеты за последний месяц</span>
+            </div>
+            <div class="best-prices-body">
+                <div class="best-prices-box">
+                    <div class="best-prices-country">
+                        <img class="country-image country-image-best-prices" src="images/country/russia.png" alt="Россия">
+                        <div class="best-prices-arrival">
+                            <span class="route-name">Симферополь (Крым)</span>
+                            <span class="route-country">РОССИЯ</span>
+                        </div>
+                    </div>
+                    <div class="best-prices-catalog">
+                        <div class="best-prices-cities">
+                            <button class="best-prices-c1-c1">Из Москвы</button>
+                            <button class="best-prices-c1-c2">Из Санкт-Петербурга</button>
+                            <button class="best-prices-c1-c3">Из Новосибирска</button>
+                            <button class="best-prices-c1-c4">Из Екатеринбурга</button>
+                            <button class="best-prices-c1-c5">Из Челябинска</button>
+                        </div>
+
+                        <div class="best-prices-prices">
+                            <button class="best-prices-c1-c1">от 4 813 ₽</button>
+                            <button class="best-prices-c1-c2">от 7 857 ₽</button>
+                            <button class="best-prices-c1-c3">от 15 127 ₽</button>
+                            <button class="best-prices-c1-c4">от 9 275 ₽</button>
+                            <button class="best-prices-c1-c5">от 9 148 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-prices-box">
+                    <div class="best-prices-country">
+                        <img class="country-image country-image-best-prices" src="images/country/armenia.png" alt="Армения">
+                        <div class="best-prices-arrival">
+                            <span class="route-name">Ереван</span>
+                            <span class="route-country">АРМЕНИЯ</span>
+                        </div>
+                    </div>
+                    <div class="best-prices-catalog">
+                        <div class="best-prices-cities">
+                            <button class="best-prices-c1-c1">Из Москвы</button>
+                            <button class="best-prices-c1-c2">Из Санкт-Петербурга</button>
+                            <button class="best-prices-c1-c3">Из Сочи</button>
+                            <button class="best-prices-c1-c4">Из Краснодара</button>
+                            <button class="best-prices-c1-c5">Из Ростова-на-Дону</button>
+                        </div>
+
+                        <div class="best-prices-prices">
+                            <button class="best-prices-c1-c1">от 6 758 ₽</button>
+                            <button class="best-prices-c1-c2">от 9 932 ₽</button>
+                            <button class="best-prices-c1-c3">от 11 951 ₽</button>
+                            <button class="best-prices-c1-c4">от 11 741 ₽</button>
+                            <button class="best-prices-c1-c5">от 11 956 ₽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="best-prices-box">
+                    <div class="best-prices-country">
+                        <img class="country-image country-image-best-prices" src="images/country/moldova.png" alt="Молдавия">
+                        <div class="best-prices-arrival">
+                            <span class="route-name">Кишинёв</span>
+                            <span class="route-country">МОЛДАВИЯ</span>
+                        </div>
+                    </div>
+                    <div class="best-prices-catalog">
+                        <div class="best-prices-cities">
+                            <button class="best-prices-c1-c1">Из Москвы</button>
+                            <button class="best-prices-c1-c2">Из Санкт-Петербурга</button>
+                            <button class="best-prices-c1-c3">Из Краснодара</button>
+                            <button class="best-prices-c1-c4">Из Сургута</button>
+                            <button class="best-prices-c1-c5">Из Нового Уренгоя</button>
+                        </div>
+
+                        <div class="best-prices-prices">
+                            <button class="best-prices-c1-c1">от 8 319 ₽</button>
+                            <button class="best-prices-c1-c2">от 10 800 ₽</button>
+                            <button class="best-prices-c1-c3">от 12 098 ₽</button>
+                            <button class="best-prices-c1-c4">от 16 277 ₽</button>
+                            <button class="best-prices-c1-c5">от 15 987 ₽</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+
+

@@ -1,0 +1,466 @@
+body {
+    background-size: cover;
+    margin: 0;
+}
+
+.intro-container {
+    padding: 12px 98px;
+    height: 100vh;
+    background: linear-gradient(300deg,#196ebc,#03a8d9);
+}
+
+.header-logo{
+    display: flex;
+    width: 97px;
+    height: 29px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    align-items: center;
+}
+
+.header-logo-text {
+    padding-left: 12px;
+}
+
+.intro-interface{
+    height: 100vh;/* Устанавливаем высоту контейнера (например, 100% высоты окна) */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Горизонтальное выравнивание по центру */
+    justify-content: center; /* Вертикальное выравнивание по центру */
+}
+
+.title-body {
+    display: flex; /* Превращаем .title-body в flex-контейнер */
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.title-text-body {
+    text-align: center; /* Горизонтальное выравнивание текста по центру */
+    margin-bottom: 40px;
+}
+
+.title-text {
+    color: #FFF; /* параметры текста */
+    font-size: 40px; /* Добавляем внешние отступы (margin) для <h2> */
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+.title-text-subtitle {
+    color: #FFF; /* параметры текста */
+    font-size: 24px;
+    margin: 0;
+}
+
+.search-params{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.param-rect{
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    appearance: none;
+    margin-right: 2px;
+    padding-left: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.city-select {
+    position: relative;
+    background-color: #FFFFFF;
+    border: none;
+    outline: none;
+    appearance: none;
+    width: 224px;
+    height: 56px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+    color: #4A4A4A; /*цвет текста*/
+}
+
+.arrival_city {
+    width: 226px;
+    height: 54px;
+    color: #4A4A4A;
+}
+
+.arrival_city::placeholder {
+    color: #A0B0B9; /* Замените #00ff00 на желаемый цвет */
+}
+
+.departure-date,
+.return-date {
+    width: 180px;
+    height: 56px;
+    color: #4A4A4A;
+}
+
+.passenger-services {
+    width: 212px;
+    height: 56px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.button-body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.button-rect {
+    background-color: #FF9241;
+    border-radius: 4px;
+    margin-top: 48px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 308px;
+    height: 64px;
+    text-decoration: none;
+}
+
+.button-text {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+.button-image {
+    padding-left: 24px;
+}
+
+.main-container{
+    margin: 56px 98px;
+    height: 200vh;
+}
+
+.main-catalog {
+}
+
+.catalog-head{
+    display: flex; /* Превращаем в flex-контейнер */
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    align-items: start; /* Вертикальное выравнивание по центру */
+}
+
+.catalog-text-body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: 36px;
+    font-size: 24px;
+}
+
+.catalog-text{
+    color: #4A4A4A;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.changed-city-text{
+    color: #00ACE2;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.edit-image-button{
+    background: none; /* Убираем фон */
+    border: none; /* Убираем границы */
+    padding: 0; /* Убираем внутренние отступы */
+    margin: 0; /* Убираем внешние отступы */
+    cursor: pointer; /* Устанавливаем курсор указателя */
+}
+
+.edit-image{
+    padding-left: 4px;
+}
+
+.category-body{
+    display: flex;
+    align-items: center; /* Горизонтальное выравнивание по центру */
+    justify-content: center;
+    gap: 56px;
+    margin-top: 48px;
+}
+
+.category-button{
+    width: 56px;
+    height: 90px;
+    border: none;
+    outline: none;
+    background: none;
+    appearance: none;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer; /* Устанавливаем курсор указателя */
+}
+
+.category-image-inactive{
+    width: 56px;
+    height: 56px;
+}
+
+.category-image-active{
+    width: 80px;
+    height: 80px;
+    transform: translate(0, 5%);
+}
+
+.category-text-active,
+.category-text-inactive {
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    width: 70px;
+}
+
+.category-text-active{
+    color: #5C5C5C;
+    position: relative;
+    transform: translate(0, -30%);
+}
+
+.category-text-active::after {
+    position: absolute;
+    content: "";
+    background-color: #00ACE2;
+    width: 70px;
+    height: 2px;
+    top: 43px;
+    left: 0;
+}
+
+.category-text-inactive{
+    color: #00ACE2;
+}
+
+.text-with-underline {
+    width: 60px;
+}
+
+.city-catalog-body {
+    margin: 58px 80px 76px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* Установите горизонтальное направление */
+    flex-wrap: wrap; /* Разрешите перенос элементов на новую строку */
+    gap: 31px 14px;
+}
+
+.city-box {
+    position: relative;
+    width: 509px;
+    height: 293px;
+    background-color: white;
+    box-shadow: 0 0 12px rgba(0, 75, 93, 0.12);
+    line-height: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    display: inline-block; /* Делаем его блочным элементом */
+    color: #fff; /* Цвет текста кнопки */
+    text-decoration: none; /* Убираем подчеркивание ссылки */
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Делаем курсор указателем при наведении */
+}
+
+.city-box-image {
+    width: 509px;
+    height: 212px;
+}
+
+.lower-city-box {
+    display: flex;
+    width: 509px;
+    height: 81px;
+    line-height: 1; /* Убираем отступы */
+    align-items: center;
+}
+
+.country-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(38, 38, 38, 0.10);
+}
+
+.country-image-city-box{
+    margin: 15px 18px 20px 25px;
+}
+
+.route-info {
+    display: flex;
+    justify-content: space-between; /* Распределяет пространство между элементами */
+    width: 100%; /* Занимает всю доступную ширину */
+}
+
+.route-info-left,
+.route-info-right {
+    flex: 1; /* Равномерно размещает route-info-left и route-info-right внутри route-info */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Выравнивает текст вертикально по центру */
+}
+
+.route-info-right {
+    padding-right: 24px;
+    flex: 0.8;
+}
+
+.route-name,
+.route-price{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 32px;
+}
+
+.route-country,
+.route-date{
+    font-family: 'Roboto', sans-serif;
+    color: #A0B0B9;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.route-name {
+    color: #5B5B5C;
+    font-weight: 700;
+}
+
+.route-price {
+    color: #00BAE8;
+    text-align: right;
+    font-weight: 400;
+}
+
+.route-date {
+    text-align: right;
+}
+
+.best-prices-head{
+    display: flex; /* Превращаем в flex-контейнер */
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    flex-direction: column;
+}
+
+.best-prices-head-text{
+    color: #4A4A4A;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.best-prices-body {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на следующую строку при нехватке места */
+    justify-content: center;
+}
+
+.best-prices-box {
+    position: relative;
+    width: 290px;
+    height: 240px;
+    background-color: white;
+    padding: 0 34px 0 34px;
+}
+
+/* Псевдоэлемент только для второго .best-prices-box */
+.best-prices-box + .best-prices-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px; /* Один пиксель влево для выравнивания полосы между контейнерами */
+    width: 2px;
+    height: 100%;
+    border-left: 1px dashed #AFBEC6; /* Пунктирная линия */
+
+}
+
+.best-prices-country {
+    width: 300px;
+    height: 52px;
+    display: flex;
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+}
+
+.best-prices-arrival {
+    padding-left: 11px;
+    display: flex;
+    flex-direction: column;
+}
+
+.best-prices-catalog {
+    display: flex;
+    flex-direction: row; /* Изменено на горизонтальное направление */
+    width: 100%; /* Занимать всю доступную ширину */
+    justify-content: space-between; /* Равномерное распределение между элементами по горизонтали */
+    align-items: center; /* Выравнивание элементов по вертикали по центру */
+    padding-top: 24px;
+}
+
+.best-prices-cities,
+.best-prices-prices{
+    display: flex;
+    flex-direction: column; /* Изменено на вертикальное направление */
+    gap: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    flex: 1;
+}
+
+.best-prices-cities button,
+.best-prices-prices button {
+    background: none; /* Убираем фон */
+    border: none; /* Убираем границы */
+    cursor: pointer; /* Устанавливаем курсор указателя */
+    text-align: left;
+    color: #4A4A4A;
+    padding: 0;
+}
+
+.best-prices-cities button{
+}
+
+.best-prices-prices button{
+    text-align: right;
+    color: #00BAE8;
+}
