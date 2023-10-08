@@ -108,6 +108,8 @@ body {
     width: 180px;
     height: 56px;
     color: #4A4A4A;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .passenger-services {
