@@ -26,42 +26,22 @@
             </div>
 
             <div class="search-params">
-                <form>
-                    <label for="city-select"></label>
-                    <select name="city-select" id="city-select" class="param-rect city-select">
-                        <option value="moscow">Москва</option>
-                        <option value="petersburg">Санкт-Петербург</option>
-                        <option value="samara">Самара</option>
-                        <option value="perm">Пермь</option>
-                        <option value="novosibirsk">Новосибирск</option>
-                    </select>
-                </form>
-                <form>
-                    <label for="arrival_city"></label>
-                    <input class="param-rect arrival_city" type="text" id="arrival_city" placeholder="Город прибытия" value="">
-                </form>
-                <form>
-                    <label class="date-label">
-
-                        <input class="param-rect departure-date" type="date" data-date="" data-date-format="DD MMMM YYYY"> <!-- нужен JS -->
-                    </label>
-                </form>
-                <form>
-                    <label class="date-label">
-
-                        <input class="param-rect return-date" type="date" id="custom-date"> <!-- нужен JS -->
-                    </label>
-                </form>
-                <form>
-                    <label>
-                        <select class="param-rect passenger-services" name="city-select"> <!-- нужен JS -->
-                            <option value="one">1 пассажир</option>
-                            <option value="two">2 пассажира</option>
-                            <option value="three">3 пассажира</option>
-                            <option value="four">4 пассажира</option>
-                        </select>
-                    </label>
-                </form>
+                <select name="city-select" id="city-select" aria-label="Город" class="param-rect city-select">
+                    <option value="moscow">Москва</option>
+                    <option value="petersburg">Санкт-Петербург</option>
+                    <option value="samara">Самара</option>
+                    <option value="perm">Пермь</option>
+                    <option value="novosibirsk">Новосибирск</option>
+                </select>
+                <input class="param-rect arrival-city" type="text" id="arrival-city" aria-label="Город прибытия" placeholder="Город прибытия" value="">
+                <input class="param-rect departure-date" type="date" id="departure-date" aria-label="Туда" data-date="" data-date-format="DD MMMM YYYY"> <!-- нужен JS -->
+                <input class="param-rect return-date" type="date" id="return-date" aria-label="Обратно"> <!-- нужен JS -->
+                <select class="param-rect passenger-services" id="passenger-select" aria-label="Кол-во пассажиров" name="passenger-select" > <!-- нужен JS -->
+                    <option value="one">1 пассажир</option>
+                    <option value="two">2 пассажира</option>
+                    <option value="three">3 пассажира</option>
+                    <option value="four">4 пассажира</option>
+                </select>
             </div>
             <div class="button-body">
                 <a href="#" class="button-rect">
@@ -225,19 +205,19 @@
                     </div>
                     <div class="best-prices-catalog">
                         <div class="best-prices-cities">
-                            <button class="best-prices-c1-c1">Из Москвы</button>
-                            <button class="best-prices-c1-c2">Из Санкт-Петербурга</button>
-                            <button class="best-prices-c1-c3">Из Новосибирска</button>
-                            <button class="best-prices-c1-c4">Из Екатеринбурга</button>
-                            <button class="best-prices-c1-c5">Из Челябинска</button>
+                            <button>Из Москвы</button>
+                            <button>Из Санкт-Петербурга</button>
+                            <button>Из Новосибирска</button>
+                            <button>Из Екатеринбурга</button>
+                            <button>Из Челябинска</button>
                         </div>
 
                         <div class="best-prices-prices">
-                            <button class="best-prices-c1-c1">от 4 813 ₽</button>
-                            <button class="best-prices-c1-c2">от 7 857 ₽</button>
-                            <button class="best-prices-c1-c3">от 15 127 ₽</button>
-                            <button class="best-prices-c1-c4">от 9 275 ₽</button>
-                            <button class="best-prices-c1-c5">от 9 148 ₽</button>
+                            <button >от 4 813 ₽</button>
+                            <button >от 7 857 ₽</button>
+                            <button >от 15 127 ₽</button>
+                            <button >от 9 275 ₽</button>
+                            <button >от 9 148 ₽</button>
                         </div>
                     </div>
                 </div>
@@ -251,19 +231,19 @@
                     </div>
                     <div class="best-prices-catalog">
                         <div class="best-prices-cities">
-                            <button class="best-prices-c1-c1">Из Москвы</button>
-                            <button class="best-prices-c1-c2">Из Санкт-Петербурга</button>
-                            <button class="best-prices-c1-c3">Из Сочи</button>
-                            <button class="best-prices-c1-c4">Из Краснодара</button>
-                            <button class="best-prices-c1-c5">Из Ростова-на-Дону</button>
+                            <button>Из Москвы</button>
+                            <button>Из Санкт-Петербурга</button>
+                            <button>Из Сочи</button>
+                            <button>Из Краснодара</button>
+                            <button>Из Ростова-на-Дону</button>
                         </div>
 
                         <div class="best-prices-prices">
-                            <button class="best-prices-c1-c1">от 6 758 ₽</button>
-                            <button class="best-prices-c1-c2">от 9 932 ₽</button>
-                            <button class="best-prices-c1-c3">от 11 951 ₽</button>
-                            <button class="best-prices-c1-c4">от 11 741 ₽</button>
-                            <button class="best-prices-c1-c5">от 11 956 ₽</button>
+                            <button>от 6 758 ₽</button>
+                            <button>от 9 932 ₽</button>
+                            <button>от 11 951 ₽</button>
+                            <button>от 11 741 ₽</button>
+                            <button>от 11 956 ₽</button>
                         </div>
                     </div>
                 </div>
@@ -277,19 +257,19 @@
                     </div>
                     <div class="best-prices-catalog">
                         <div class="best-prices-cities">
-                            <button class="best-prices-c1-c1">Из Москвы</button>
-                            <button class="best-prices-c1-c2">Из Санкт-Петербурга</button>
-                            <button class="best-prices-c1-c3">Из Краснодара</button>
-                            <button class="best-prices-c1-c4">Из Сургута</button>
-                            <button class="best-prices-c1-c5">Из Нового Уренгоя</button>
+                            <button>Из Москвы</button>
+                            <button>Из Санкт-Петербурга</button>
+                            <button>Из Краснодара</button>
+                            <button>Из Сургута</button>
+                            <button>Из Нового Уренгоя</button>
                         </div>
 
                         <div class="best-prices-prices">
-                            <button class="best-prices-c1-c1">от 8 319 ₽</button>
-                            <button class="best-prices-c1-c2">от 10 800 ₽</button>
-                            <button class="best-prices-c1-c3">от 12 098 ₽</button>
-                            <button class="best-prices-c1-c4">от 16 277 ₽</button>
-                            <button class="best-prices-c1-c5">от 15 987 ₽</button>
+                            <button>от 8 319 ₽</button>
+                            <button>от 10 800 ₽</button>
+                            <button>от 12 098 ₽</button>
+                            <button>от 16 277 ₽</button>
+                            <button>от 15 987 ₽</button>
                         </div>
                     </div>
                 </div>
