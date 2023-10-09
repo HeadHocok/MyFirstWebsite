@@ -1,3 +1,9 @@
+:root {
+    --color-gray: #4A4A4A;
+    --color-white: #FFF;
+    --font-primary: 'Roboto', sans-serif;
+}
+
 body {
     background-size: cover;
     margin: 0;
@@ -48,7 +54,7 @@ body {
 }
 
 .title-text {
-    color: #FFF; /* параметры текста */
+    color: var(--color-white); /* параметры текста */
     font-size: 40px; /* Добавляем внешние отступы (margin) для <h2> */
     margin: 0;
     padding-bottom: 8px;
@@ -67,7 +73,7 @@ body {
 }
 
 .param-rect{
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     border: none;
     outline: none;
     appearance: none;
@@ -81,7 +87,7 @@ body {
 }
 .city-select {
     position: relative;
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     border: none;
     outline: none;
     appearance: none;
@@ -90,13 +96,13 @@ body {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 
-    color: #4A4A4A; /*цвет текста*/
+    color: var(--color-gray); /*цвет текста*/
 }
 
 .arrival-city {
     width: 226px;
     height: 54px;
-    color: #4A4A4A;
+    color: var(--color-gray);
 }
 
 .arrival_city::placeholder {
@@ -107,7 +113,7 @@ body {
 .return-date {
     width: 180px;
     height: 56px;
-    color: #4A4A4A;
+    color: var(--color-gray);
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -151,7 +157,7 @@ body {
 }
 
 .button-text {
-    color: #FFF;
+    color: var(--color-white);
     font-family: 'Roboto', sans-serif;
     font-size: 28px;
     font-style: normal;
@@ -184,7 +190,7 @@ body {
 }
 
 .catalog-text{
-    color: #4A4A4A;
+    color: var(--color-gray);
     text-align: center;
     font-size: 24px;
     font-weight: 500;
@@ -299,7 +305,7 @@ body {
     border-radius: 8px;
     overflow: hidden;
     display: inline-block; /* Делаем его блочным элементом */
-    color: #fff; /* Цвет текста кнопки */
+    color: var(--color-white); /* Цвет текста кнопки */
     text-decoration: none; /* Убираем подчеркивание ссылки */
     border: none; /* Убираем границу */
     cursor: pointer; /* Делаем курсор указателем при наведении */
@@ -389,7 +395,7 @@ body {
 }
 
 .best-prices-head-text{
-    color: #4A4A4A;
+    color: var(--color-gray);
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
@@ -468,7 +474,7 @@ body {
     border: none; /* Убираем границы */
     cursor: pointer; /* Устанавливаем курсор указателя */
     text-align: left;
-    color: #4A4A4A;
+    color: var(--color-gray);
     padding: 0;
 }
 
